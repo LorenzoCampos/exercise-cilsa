@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="html-users" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link id="style" rel="stylesheet" href="darkStyle.css">
+</head>
+
+<body>
+
+<main class="main-users">
+
+    <div class="container-users-log_in">
+
+        <div class="form-users">
+
+            <h1>Formulario de datos personales</h1>
+
+            <form methid="post">
+
+                <div class="form-users_item">
+                    <label for="first-name">Nombre<span>*</span></label>
+                    <input type="text" id="first-name">
+                    <div class="error-message" id="error-name"></div>
+                </div>
+
+                <div class="form-users_item">
+                    <label for="last-name">Apellido<span>*</span></label>
+                    <input type="text" id="last-name">
+                    <div class="error-message" id="error-last"></div>
+                </div>
+
+                <div class="form-users_item">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email">
+                    <div class="error-message" id="error-email"></div>
+                </div>
+
+                <div class="form-users_item">
+                    <label for="date">Fecha de Nacimiento<span>*</span></label></h3>
+                    <input type="date" id="date" >
+                    <div class="error-message" id="error-date"></div>
+                </div>
+
+                <div class="form-users_item">
+                    <label for="country">Pais de Residencia<span>*</span></label>
+                    <select id="country" required>
+                        <option value="">Seleccionar</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Peru</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <div class="error-message" id="error-country"></div>
+                </div>
+
+                <div class="form-users_submit">
+                    <button type="submit" id="button-send">Enviar</button>
+                </div>
+
+                
+
+            </form>
+
+        </div>
+            <div class="form-users_item">
+                <div class="container-mode">
+                    <button class="mode-btn" id="dark-mode">Modo Oscuro</button>
+                    <button class="mode-btn" id="light-mode">Modo Claro</button>
+                </div>
+            </div>
+    </div>
+
+</main>
+
+<script src="validation.js"></script>
+<script src="changeMode.js"></script>
+
+</body>
+</html>

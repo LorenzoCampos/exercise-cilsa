@@ -1,0 +1,222 @@
+
+:root {
+
+    --color-text: #f3f8f7;
+    --color-background: #0e0e11;
+    --color-background-form: #1e2e2e;
+    --color-text-button: #ffffff;
+    --color-button-default: #4a7d7a;
+    --color-button-hover: #416b69;
+    --color-input-focus: #467472;
+    --color-error: #ff5757;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkmacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-size: cover;
+    background-color: var(--color-background);
+    height: 100%;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    outline:none;
+    text-decoration: none;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+.aside-filter-item a:hover {
+    color: black;
+    text-decoration-line: underline;
+}
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* Index settings */
+
+
+.main-index {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+/* End Index settings */
+
+/* ---------------------------------------------------------------------------------------- */ 
+
+/* Data Form settings */
+
+
+.main-users {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-users-log_in {
+    width: 35em;
+    background-color: var(--color-background-form);
+    border-radius: .6em;
+    padding: 1.9em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form-users {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-users h1 {
+    color: var(--color-text);
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+
+.form-users form {
+    color: var(--color-text);
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form-users_item {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.form-users_item input {
+    transition: outline 140ms;
+    padding: .625em;
+    height: 2.5em;
+    border-radius: 0.2em;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+}
+
+.form-users_item input:focus {
+    outline: .15em solid var(--color-input-focus);
+    border: .1em solid var(--color-input-focus);
+}
+
+.form-users_item select {
+    transition: outline 140ms;
+    padding: .625em;
+    height: 3em;
+    border-radius: 0.2em;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+}
+
+.form-users_item select:focus {
+    outline: .15em solid var(--color-input-focus);
+    border: .1em solid var(--color-input-focus);
+}
+
+.form-users_item label span {
+    color: var(--color-error);
+}
+
+.form-users_submit {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-users_submit button {
+    transition: background-color 170ms;
+    background-color: var(--color-button-default);
+    width: 100%;
+    color: var(--color-text-button);
+    padding: .125em 1em;
+    height: 2.75em;
+    border-radius: 0.2em;
+    font-size: 1em;
+    line-height: 1.5em;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-users_submit button:hover {
+    background-color: var(--color-button-hover);
+}
+
+.error-message {
+    color: var(--color-error);
+    margin-right: .4em;
+    display: flex;
+    flex-direction: row;
+    font-size: .9em;
+}
+
+.container-mode {
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-around;
+}
+
+.container-mode button {
+    transition: background-color 170ms;
+    background-color: var(--color-button-default);
+    width: 40%;
+    color: var(--color-text-button);
+    padding: .125em 1em;
+    height: 2.75em;
+    border-radius: 0.2em;
+    font-size: 1em;
+    line-height: 1.5em;
+    border: 0;
+    cursor: pointer;
+}
+
+.container-mode button:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-text-button);
+}
+
+/* End Data Form settings */
