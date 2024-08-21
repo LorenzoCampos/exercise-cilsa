@@ -20,16 +20,27 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('error-country').innerHTML = '';
 
     let formError = false;
-
     let message = "Debes completar este campo";
+    let messageFormat = 'Solo se permiten letras en este campo';
 
+    // Expresión regular correcta
+    const format = /^[A-Za-z]+$/;
+
+    // Validación del campo "Nombre"
     if (!name.value) {
       document.getElementById('error-name').innerHTML = message;
       formError = true;
+    } else if (!format.test(name.value)) {
+      document.getElementById('error-name').innerHTML = messageFormat;
+      formError = true;
     }
-    
+
+    // Validación del campo "Apellido"
     if (!lastname.value) {
       document.getElementById('error-last').innerHTML = message;
+      formError = true;
+    } else if (!format.test(lastname.value)) {
+      document.getElementById('error-last').innerHTML = messageFormat;
       formError = true;
     }
     
